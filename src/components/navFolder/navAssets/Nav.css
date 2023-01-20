@@ -1,0 +1,78 @@
+.nav-wrapper{
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav__left {
+  flex: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__logo-wrapper > img {
+  height: 75px;
+  margin-left: 24px;
+}
+
+.nav__right {
+  flex: 0.5;
+}
+
+.nav__right > ul {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 680px;
+    font-weight: 700;
+    list-style: none;
+    margin-right: 16px;
+}
+
+.nav__right > ul > li {
+    position: relative;
+    cursor: pointer;
+    padding: 8px;
+    border: 2px solid;
+    border-image: repeating-linear-gradient(135deg, var(--primary-color) 0 10px,var(--primary-color-hover) 0 20px) 1;
+    mask: 
+    conic-gradient(from 180deg at top 8px right 8px, #0000 90deg,#000 0)
+     var(--_i,200%) 0  /200% var(--_i,8px) border-box no-repeat,
+    conic-gradient(at bottom 8px left  8px,  #0000 90deg,#000 0)
+     0   var(--_i,200%)/var(--_i,8px) 200% border-box no-repeat,
+    linear-gradient(#000 0 0) padding-box no-repeat;
+    transition: .3s, -webkit-mask-position .2s .2s;
+}
+
+/* .nav__right > ul > li:after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--primary-color);
+    transition: all 200ms ease-in-out;
+}
+
+.nav__right > ul > li:hover:after {
+    left: 0;
+    width: 100%;
+} */
+
+.nav__right > ul > li:hover {
+    color: var(--primary-color-hover);
+    --_i: 100%;
+    transition: .2s, -webkit-mask-size .2s .2s;
+}
