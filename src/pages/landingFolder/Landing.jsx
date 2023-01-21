@@ -1,5 +1,6 @@
 import React from "react";
 import "./landingAssets/Landing.css";
+import { Link } from "react-router-dom";
 
 import {
   ArrowDownwardRounded,
@@ -66,10 +67,10 @@ const Landing = () => {
           </div>
         </h3>
       </div>
-      <div className="mail-me">
+      <Link to={"/about-contact"} className="mail-me">
         {" "}
-        <EmailRounded />
-      </div>
+         <EmailRounded />
+      </Link>
       <div className="project-me">
         {" "}
         <ViewModuleRounded />

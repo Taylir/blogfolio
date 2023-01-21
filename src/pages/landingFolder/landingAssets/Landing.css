@@ -203,12 +203,14 @@ body {
   top: calc(50% - 1px);
   right: 0;
   height: 2px;
+
   background: linear-gradient(
     -45deg,
     rgba(0, 0, 255, 0),
     #eaeef8,
     rgba(0, 0, 255, 0)
   );
+  
   -webkit-transform: translateX(50%) rotateZ(45deg);
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;
@@ -390,11 +392,11 @@ body {
   right: 60px;
 
   background: #f2f9fe;
-  background: linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-  background: -webkit-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-  background: -moz-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-  background: -ms-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
-  background: -o-linear-gradient(top, #f2f9fe 5%, #d6f0fd 100%);
+  background: linear-gradient(to bottom, #f2f9fe 5%, #d6f0fd 100%);
+  background: -webkit-linear-gradient(to bottom, #f2f9fe 5%, #d6f0fd 100%);
+  background: -moz-linear-gradient(to bottom, #f2f9fe 5%, #d6f0fd 100%);
+  background: -ms-linear-gradient(to bottom, #f2f9fe 5%, #d6f0fd 100%);
+  background: -o-linear-gradient(to bottom, #f2f9fe 5%, #d6f0fd 100%);
 
   border-radius: 100px;
   -webkit-border-radius: 100px;
