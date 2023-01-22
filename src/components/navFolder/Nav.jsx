@@ -20,7 +20,7 @@ const Nav = () => {
         <div className="nav__right">
           <ul>
             <li onClick={() => navigate("/")}>Practice Blog</li>
-            <li onClick={() => navigate("/")}>Projects</li>
+            <li onClick={() => navigate("/projects")}>Projects</li>
             <li onClick={() => navigate("/about-contact")}>About Me</li>
             <li onClick={() => navigate("/about-contact")}>Contact</li>
           </ul>

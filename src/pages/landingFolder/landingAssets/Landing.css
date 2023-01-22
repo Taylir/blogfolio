@@ -11,11 +11,11 @@
 .landing__header,
 .about-me,
 .contact-me,
-.projects,
+.landing__projects,
 .mail-me,
 .project-me,
 .blog-info,
-.blog-projects {
+.landing__blog-projects {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,13 +58,13 @@
   justify-content: center;
 }
 
-.projects {
+.landing__projects {
   grid-row: 5;
   grid-column: 4 / 6;
   font-size: 20px;
 }
 
-.projects > h5 {
+.landing__projects > h5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,26 +99,26 @@
 
 .mail-me > .MuiSvgIcon-root,
 .project-me > .MuiSvgIcon-root,
-.blog-projects > .MuiSvgIcon-root {
+.landing__blog-projects > .MuiSvgIcon-root {
   font-size: 48px;
   transition: all 100ms ease-in-out;
 }
 
 .mail-me:hover,
 .project-me:hover,
-.blog-projects:hover {
+.landing__blog-projects:hover {
   cursor: pointer;
 }
 
 .mail-me:hover .MuiSvgIcon-root,
 .project-me:hover .MuiSvgIcon-root,
-.blog-projects:hover > .MuiSvgIcon-root {
+.landing__blog-projects:hover > .MuiSvgIcon-root {
   transform: scale(1.2);
 }
 
 .mail-me:active .MuiSvgIcon-root,
 .project-me:active .MuiSvgIcon-root,
-.blog-projects:active > .MuiSvgIcon-root {
+.landing__blog-projects:active > .MuiSvgIcon-root {
   transform: scale(0.8);
 }
 
@@ -127,7 +127,7 @@
   grid-column: 7;
 }
 
-.blog-info > h3 {
+.landing__blog-h3 {
   padding: 8px;
 }
 
@@ -151,9 +151,9 @@
   }
 }
 
-.blog-projects {
-    grid-column: 7;
-    grid-row: 5;
+.landing__blog-projects {
+  grid-column: 7;
+  grid-row: 5;
 }
 
 .call-to {
@@ -210,7 +210,7 @@ body {
     #eaeef8,
     rgba(0, 0, 255, 0)
   );
-  
+
   -webkit-transform: translateX(50%) rotateZ(45deg);
   transform: translateX(50%) rotateZ(45deg);
   border-radius: 100%;

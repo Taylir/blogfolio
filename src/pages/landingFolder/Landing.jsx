@@ -49,7 +49,7 @@ const Landing = () => {
           </span>{" "}
         </h5>
       </div>
-      <div className="projects">
+      <div className="landing__projects">
         <h5>
           And check out some of my projects with this link here. <pre> </pre>{" "}
           <span className="pointTo">
@@ -58,7 +58,7 @@ const Landing = () => {
         </h5>
       </div>
       <div className="blog-info">
-        <h3>
+        <h3 className="landing__blog-h3">
           Here you can see some of the Frontend Engineering Problems I am
           testing myself on a daily basis to stay up to date and making sure I
           keep a strong foundation! <br />{" "}
@@ -69,13 +69,13 @@ const Landing = () => {
       </div>
       <Link to={"/about-contact"} className="mail-me">
         {" "}
-         <EmailRounded />
+        <EmailRounded />
       </Link>
-      <div className="project-me">
+      <Link to={"/projects"} className="project-me">
         {" "}
         <ViewModuleRounded />
-      </div>
-      <div className="blog-projects">
+      </Link>
+      <div className="landing__blog-projects">
         <PlaylistAddCheckRounded />
       </div>
       <div className="sky">
