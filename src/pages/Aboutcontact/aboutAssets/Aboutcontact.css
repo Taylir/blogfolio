@@ -87,11 +87,19 @@ input, textarea {
     flex-direction: column;
 }
 
-.form__item > input::placeholder {
+.form__item > input,
+.form__item > textarea {
+    background-color: rgb(223, 223, 223);
+}
+
+.form__item > input::placeholder,
+.form__item > textarea::placeholder {
+    color: black;
     opacity: .35;
 }
 
-.form__item > input:focus::placeholder {
+.form__item > input:focus::placeholder,
+.form__item > textarea:focus::placeholder {
     color: var(--primary-color);
     opacity: .7;
 }
@@ -102,15 +110,6 @@ input, textarea {
     
 .form__item:last-of-type > textarea {
     height: 120px;
-}
-
-.form__item:last-of-type > textarea::placeholder {
-    opacity: .35;
-}
-
-.form__item:last-of-type > textarea:focus::placeholder {
-    color: var(--primary-color);
-    opacity: .85;
 }
 
 .form__submit {

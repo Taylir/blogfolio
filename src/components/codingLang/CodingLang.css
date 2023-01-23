@@ -17,6 +17,7 @@
 
 .coding-badge > h5 {
     font-size: 16px;
+    color: silver;
     position: absolute;
     bottom: -60px;
     transform: scale(0);

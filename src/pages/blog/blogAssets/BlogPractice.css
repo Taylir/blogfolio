@@ -1,0 +1,85 @@
+.blog__css-list > li,
+.blog__js-list > li {
+    list-style: none;
+}
+
+.blog-practice {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-practice__title {
+    background-color: var(--primary-color);
+    color: silver;
+    margin-top: 32px;
+    padding: 4px;
+    border-radius: 8px;
+    border: 1px solid silver;
+}
+
+.blog-practice__title > h2 {
+    padding: 8px;
+}
+
+.blog-practice__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__css-half {
+    border-right: 1px solid rgba(0, 0, 0, .25);
+    flex: .3;
+}
+
+.blog__js-half {
+    flex: .3;
+}
+
+.blog__css-half > h3,
+.blog__js-half > h3 {
+    color: silver;
+    position: relative;
+     font-size: 36px;
+}
+
+.blog__css-half > h3:after,
+.blog__js-half > h3:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left:0;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.css__list-item,
+.js__list-item {
+    background-color: var(--primary-color);
+    color: silver;
+    border-radius: 4px;
+    padding: 4px;
+    margin-top: 16px;
+    text-align: left;
+    font-size: 24px;
+    border-bottom: 2px solid silver;
+    border-left: 2px solid silver;
+    width: 200px;
+    transition: all 100ms ease-in-out;
+}
+
+.css__list-item:hover,
+.js__list-item:hover {
+    box-shadow: -2px 1px 4px rgba(0, 0, 0, .5);
+    border: 1px solid silver;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.css__list-item:active,
+.js__list-item:active {
+    transform: scale(.9);
+}
