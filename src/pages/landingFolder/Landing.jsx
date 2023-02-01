@@ -75,18 +75,10 @@ const Landing = () => {
         {" "}
         <ViewModuleRounded />
       </Link>
-      <div className="landing__blog-projects">
+      <Link to={"/practice-blog"} className="landing__blog-projects">
         <PlaylistAddCheckRounded />
-      </div>
-      <div className="sky">
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-        <div className="star"></div>
-      </div>
+      </Link>
+    
       <div className="cloud"></div>
       <div className="road"></div>
     </div>

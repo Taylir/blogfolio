@@ -1,7 +1,7 @@
 import React from "react";
 import CodingLang from "../../components/codingLang/CodingLang";
 import "./aboutAssets/Aboutcontact.css";
-import img from "./aboutAssets/Assets/Test Photo.avif";
+import img from "./aboutAssets/Assets/me.jpg";
 import htmlB from "./aboutAssets/Assets/HTML5_Badge.png";
 import CssBadge from "./aboutAssets/Assets/Css Badge.webp";
 import JS from "./aboutAssets/Assets/JS.png";
