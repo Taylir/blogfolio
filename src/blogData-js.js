@@ -14,7 +14,7 @@ const datajs = [
     id: "1 js",
     title: "Binary Search",
     body: <>
-    <h4> Nothing here yet come back on 1/24/2023 to see that!</h4>
+    <h4> Nothing here yet come back on 2/(3/4)/2023 to see that!</h4>
     </>,
   },
   {

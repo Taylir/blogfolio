@@ -3,14 +3,14 @@ const dataCss = [
         id: "1 css",
         title: "Star Animation",
         body: <>
-        <h4> Nothing here yet come back on 1/26/2023 to see that!</h4>
+        <h4> Will be tackling more CSS when finished with a decent chunck of JS computer science problems</h4>
         </>,
     }, 
     {
         id: "2 css",
         title: "Cloud Shapes",
         body: <>
-        <h4> Nothing here yet come back on 1/25/2023 to see that!</h4>
+        <h4> Will be tackling more CSS when finished with a decent chunck of JS computer science problems</h4>
         </>,
     }
 ]
