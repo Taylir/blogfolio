@@ -52,7 +52,7 @@ const Projects = () => {
               "This was my original portfolio, on here is some of the clones I did such as google search, twitter, discord, hulu and more. These are incomplete as I was using them for practice but plan on making true clones in the future!"
             }
             link1={"https://github.com/Taylir/betterportfolio"}
-            link2={"https://taylorfel.com"}
+            link2={"https://taylir.github.io/betterportfolio/"}
           />
           <div className="projects__footer"></div>
         </div>
