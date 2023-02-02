@@ -10,8 +10,37 @@ import firebase from "./aboutAssets/Assets/Firebase.webp";
 import git from "./aboutAssets/Assets/Git.png";
 import tipe from "./aboutAssets/Assets/Type.webp";
 import visual from "./aboutAssets/Assets/Visual.webp";
+import emailjs from "@emailjs/browser";
+import { Replay } from "@mui/icons-material";
 
 const Aboutcontact = () => {
+  function contact(event) {
+    const loading = document.querySelector(".contact__loading");
+    const success = document.querySelector(".contact__success");
+    loading.classList += " contact__visable";
+    event.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_ju9czme",
+        "template_k4jmew9",
+        event.target,
+        "01135LlMefKItv48l"
+      )
+      .then((res) => {
+        console.log("it worked");
+        loading.classList.remove("contact__visable");
+        success.classList += " contact__visable";
+      })
+      .catch((err) => {
+        console.log("it did not work");
+        loading.classList.remove("contact__visable");
+        alert(
+          `The Email service is temporarily unavailable. Please contact me directly on tdl9716@gmail.com`
+        );
+      });
+  }
+
   return (
     <div className="about">
       {/* Left Side of the Page starts here */}
@@ -58,11 +87,15 @@ const Aboutcontact = () => {
           time will show just what I can do!{" "}
         </h3>
       </div>
-      {/*Right side of the page starts here!  */}
       <div className="right__contact">
-        {/* Form */}
         <div className="contact-page__form">
-          <form onSubmit={null} className="contact__form">
+          <div className="contact__loading">
+            <Replay />
+          </div>
+          <div className="contact__success">
+            Thanks for reaching out! I will be in contact with you soon!
+          </div>
+          <form onSubmit={(event) => contact(event)} className="contact__form">
             <h1>Feel free to reach out to me via Email to talk more!</h1>
             <div className="form__item">
               <input

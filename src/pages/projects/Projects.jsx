@@ -54,6 +54,7 @@ const Projects = () => {
             link1={"https://github.com/Taylir/betterportfolio"}
             link2={"https://taylorfel.com"}
           />
+          <div className="projects__footer"></div>
         </div>
       </div>
     </div>

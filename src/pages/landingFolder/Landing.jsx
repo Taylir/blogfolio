@@ -34,8 +34,7 @@ const Landing = () => {
           I'm a 25 year-old American{" "}
           <span className="call-to">Frontend Software Engineer</span> with a
           strong passion for developing websites with great user interface and
-          user experience. I currently work on extremely difficult engineering
-          problems as well as working and learning with a team consisiting of
+          user experience. I work daily with a team consisiting of
           some of the most <span className="call-to"> talented</span> and
           <span className="call-to"> experienced</span> software engineers every
           day.

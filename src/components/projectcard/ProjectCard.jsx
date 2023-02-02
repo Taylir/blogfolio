@@ -10,11 +10,11 @@ const ProjectCard = ({ img, title, langs, description, link1, link2 }) => {
         <h3>{langs}</h3>
         <h4>{description}</h4>
         <div className="project__links">
-          <a href={link1} target="_blank" className="project__link">
+          <a href={link1} target="_blank" rel="noreferrer" className="project__link">
             <GitHub />
           </a>
           {link2 && (
-            <a className="project__link" target="_blank" href={link2}>
+            <a className="project__link" rel="noreferrer" target="_blank" href={link2}>
               <InsertLink />
             </a>
           )}
