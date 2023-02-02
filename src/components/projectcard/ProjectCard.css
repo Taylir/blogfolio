@@ -38,7 +38,7 @@
 .project__descriptors > h3, 
 .project__descriptors > h4,
 .project__links {
-    transform: translateX(-600px);
+    transform: translateX(-1000px);
     transition: all 300ms ease-in-out;
 }
 
@@ -61,4 +61,14 @@
   left: 0;
   width: 100%;
   transition: 300ms all ease-in-out;
+}
+
+@media (max-width:678px) {
+  .project__descriptors > h1 {
+    font-size: 32px;
+  }
+
+  .project__descriptors > h3 {
+    font-size:24px ;
+  }
 }

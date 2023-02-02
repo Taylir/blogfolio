@@ -1,0 +1,55 @@
+.navsmall {
+  position: absolute;
+  width: 25vw;
+  height: 50vh;
+  top: -14px;
+  right: 0;
+  background-color: #242424;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 8px;
+  box-shadow: 0 0 4px 2px var(--primary-color);
+  z-index: 999;
+}
+
+.navsmall__close-menu {
+  flex: 0.12;
+  width: 100%;
+  margin-right: 20.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navsmall__close-menu > .MuiSvgIcon-root {
+  color: white;
+  font-size: 36px;
+}
+
+.navsmall--item {
+  flex: 0.22;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -40px;
+  list-style: none;
+  border-top: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.navsmall--item,
+.navsmall__close-menu {
+  transition: all 300ms ease;
+}
+
+.navsmall--item:hover,
+.navsmall__close-menu:hover {
+  background-color: #292929;
+  cursor: pointer;
+}
