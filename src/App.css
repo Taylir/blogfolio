@@ -1,8 +1,5 @@
 body {
   background: linear-gradient(to left, #242424, #333333);
   height: 100vh;
-  overflow: hidden;
-  display: -webkit-box;
-  display: flex;
 }
 

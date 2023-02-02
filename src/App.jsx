@@ -11,9 +11,9 @@ import Stars from "./components/stars/Stars";
 function App() {
   return (
     <Router>
+      <Stars />
       <div className="App">
         <Nav />
-        <Stars />
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about-contact" element={<Aboutcontact />} />

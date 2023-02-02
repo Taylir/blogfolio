@@ -1,6 +1,7 @@
 .landing {
   height: calc(100vh - 79px);
-  width: 100vw;
+  width: 100%;
+  overflow-x: hidden;
   display: grid;
   gap: 1.5rem;
   align-items: center;
