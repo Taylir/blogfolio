@@ -11,7 +11,9 @@ import Stars from "./components/stars/Stars";
 function App() {
   return (
     <Router>
+      <div className="star__stuff">
       <Stars />
+      </div>
       <div className="App">
         <Nav />
         <Routes>

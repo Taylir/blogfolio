@@ -306,23 +306,18 @@
 /* Large Phones, Phones, Tablets */
 @media (max-width:768px) {
   .landing__blog-h3 {
-    font-size: 14px;
-  }
-}
-
-@media (max-width:648) {
-  .landing {
-    display: flex;
-  }
-}
-
-@media (max-width:584px) {
-  .landing__blog-h3 {
     font-size: 12px;
   }
+
+  .landing {
+    gap: .5rem;
+  }
 }
+
 
 /* Small Phones */
 @media(max-width:480px) {
-  
+  .landing__header > h1 {
+    font-size: 28px;
+  }
 }
