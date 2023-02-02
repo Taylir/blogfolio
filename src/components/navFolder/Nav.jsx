@@ -9,10 +9,15 @@ import { MenuRounded } from "@mui/icons-material";
 const Nav = () => {
   const navigate = useNavigate();
   const [smallNav, setSmallNav] = useState(false);
-  const smallNavToggle = document.querySelector(".small__nav--menu");
+  const [smallNavToggle, setSmallNavToggle] = useState({});
 
   function toggleSmallNav() {
     setSmallNav(!smallNav);
+    if (!smallNav) {
+      smallNavToggle.classList += " display-small__nav";
+    } else {
+      smallNavToggle.classList.remove("display-small__nav");
+    }
   }
 
   function logoPress() {
@@ -23,13 +28,9 @@ const Nav = () => {
   }
 
   useEffect(() => {
-
-    if (smallNav) {
-      smallNavToggle.classList += " display-small__nav";
-    } else {
-      smallNavToggle.classList.remove("display-small__nav");
-    }
-  }, [smallNav]);
+    setSmallNavToggle(document.querySelector(".small__nav--menu"));
+    console.log(smallNav, smallNavToggle);
+  }, [smallNav,smallNavToggle]);
 
   return (
     <div className="nav-wrapper">
