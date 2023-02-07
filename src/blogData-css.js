@@ -1,5 +1,16 @@
 import cardcar1 from "../src/pages/blog/blogAssets/Assets/cardCar1.png";
 import cardcar2 from "../src/pages/blog/blogAssets/Assets/cardCar2.png";
+import cardcar3 from "../src/pages/blog/blogAssets/Assets/cardCar3.png";
+import cardcar4 from "../src/pages/blog/blogAssets/Assets/cardCar4.png";
+import cardcar5 from "../src/pages/blog/blogAssets/Assets/cardCar5.png";
+import cardcar6 from "../src/pages/blog/blogAssets/Assets/cardCar6.png";
+import cardcar7 from "../src/pages/blog/blogAssets/Assets/cardCar7.png";
+import cardcar8 from "../src/pages/blog/blogAssets/Assets/cardCar8.png";
+import cardcar9 from "../src/pages/blog/blogAssets/Assets/cardCar9.png";
+import cardcar10 from "../src/pages/blog/blogAssets/Assets/cardCar10.png";
+import cardcar11 from "../src/pages/blog/blogAssets/Assets/cardCar11.png";
+import cardcar12 from "../src/pages/blog/blogAssets/Assets/cardCar12.png";
+import Cardcarousel from "./components/cardcarousel/Cardcarousel";
 
 const dataCss = [
   {
@@ -12,7 +23,9 @@ const dataCss = [
           sure why, sure carousels have to load all the imagaes for each
           carousel MOST of the time but with some lazy loading and other img
           elements you can use. It saves a lot of space and is a good practice
-          for CSS which is the main plan of today!
+          for CSS which is the main plan of today! (Note: I see the images are
+          hard to read and plan on updating them when I do this again for
+          practice.)
         </h4>
         <li>
           <h4>
@@ -47,68 +60,85 @@ const dataCss = [
           <img src={cardcar2} alt="" className="blog__img" />
 
           <p className="blog__text-left">
-            3. So with these two pointers now starting at the front and end of
-            any array given we can move on to the while loop which will feep
-            running until we get our answer of finding our target. And of course
-            that will begin with us calling our while loop basically stating
-            while the left pointer (l) is less than or equal to our right
-            pointer (r). This way they will never cross over each other and
-            create some odd bug. I will also add in here, our mid identifier. By
-            adding our two pointers together and dividing it by 2 we can make
-            sure we always have a way to find the middle of the mini array we
-            will be going through.
+            3. We now have those 8 cards on top of each other, 4 big ones and 4
+            little ones but we want to stagger the big cards to give it a nice
+            feel and look so using some transform translate on all of those big
+            card will give it a more cards in hand kind of look and feel. And as
+            well will be aplying some hover effects, so that is looks like you
+            are then looking at the hand when hovered and move those little
+            cards out and showing some more litts perks or ideas. In the css we
+            will have when we hover the card group we want the indiviual cards
+            to do certain translations and rotations. And you can see both the
+            hover state and the non-hover state. After this point I will have
+            pictures added in the future to notice it even easier with how it is
+            working.
           </p>
-          <img src={null} className="blog__img" alt="" />
+          <img src={cardcar3} className="blog__img" alt="" />
+          <br />
+          <img src={cardcar4} className="blog__img" alt="" />
+          <br />
+          <img src={cardcar5} className="blog__img" alt="" />
+
           <p className="blog__text-left">
-            4. I added the Math.floor there for when we run into getting a
-            decimal when we divide by like 7/2 to avoid getting 3.5. Any ways
-            now we want to take the mid index we created and figure out what our
-            middle number would be. In this case is would be (29 - 0) / 2
-            rounding down gives us 14. So we will be having our mid pointer
-            pointing at index 14 in this case being number 15. So we see that 15
-            is smaller than our target in this array, meaning we can disregard
-            all of the numbers left of the middle and the current number we are
-            on as well and move the left pointer (l) to index 15 as we know
-            index 14 is not our target.
+            4. After getting that all in place you could be done with just that
+            for a nice and cool looking card style CSS task. However this is a
+            carousel we will be making so we will be adding more ontop of that
+            and letting it have the ability to go back and forth say to show off
+            employees, or some ones birthday. We will start by first adding some
+            more groups and wrap now all of the seperate groups into a bigger
+            group, giving us 3 "hands". By absoluting the position of the
+            card-group we had before and changing the now 'card-groups' class to
+            also have the same width and aspect ratio everything will stay
+            centered. But if you look behind the current hovered group, you will
+            notice that the other groups are still showing. So here we will
+            start using some java script and data sets to help us start to more
+            properly use the carousel!
           </p>
-          <img src={null} className="blog__img" alt="" />
+          <img src={cardcar6} className="blog__img" alt="" />
+          <br />
+          <img src={cardcar7} className="blog__img" alt="" />
           <p className="blog__text-left">
             {" "}
-            5. Now after adding that line the middle will continue to move to
-            the right as long as the middle is less than our target so we need
-            to tackle the other side in this case where the middle becomes
-            greater than our target. We are basically going to do what we did a
-            second ago but reversed. So if the middle is greater than our target
-            we want to move the right pointer inward to disregard the right half
-            of the array.
+            5. Before we start the JS part of this I want to set up some buttons
+            and the CSS that will hide the cards in the back. So using data
+            variables I can set an index to each of the card groups as well as
+            what their current status is. This could be done dynamically with a
+            counter as well using a useState in react but for this we wil just
+            be having it set at 3. And we will also be adding some buttons for
+            the ability to go through out the carousel in a nice easy fasion.
           </p>
-          <img src={null} className="blog__img" alt="" />
+          <img src={cardcar8} className="blog__img" alt="" />
           <p className="blog__text-left">
-            6. With both sides now moving inward based on our middle that means
-            eventualy the middle will be our answer no matter what! And we can
-            add the last else statment that will return our answer. And an easy
-            way to remember which pointer to move is that if the middle is
-            bigger than our target, it has to be smaller and all the numbers in
-            this SORTED array to the right are bigger so we can disregard that.
-            And if the middle is smaller than our target we have to move the
-            left one inward as all of those numbers are smaller than our middle
-            number. And repeating this over and over will eventually put our
-            answer right at the middle of the two!
+            6. Now the js part, we are going to want a function for those
+            buttons we made earlier, one to move it right and the other to move
+            it left. So we will need a variable to keep track of the index to
+            display the correct carousel, and a way to keep track of which group
+            will be next and which one will be before it. And in the function we
+            will want to first create a variable that will keep track of the
+            next index, and after that make variables that will hold the next
+            and current group as well. So using a ternary operator for the
+            bumping of the index, and then document.querySelector we can pull in
+            which group we are on atm. As well as asinging different status such
+            as active or before. And we will want the active index to be a
+            global scope, so either left or right button can control and figure
+            out exactly where it is.
           </p>
-          <img src={null} className="blog__img" alt="" />
+          <img src={cardcar9} className="blog__img" alt="" />
+          <br />
+          <img src={cardcar10} className="blog__img" alt="" />
+          <br />
+          <img src={cardcar11} className="blog__img" alt="" />
+          <br />
+          <img src={cardcar12} className="blog__img" alt="" />
           <p className="blog__text-left">
-            Ans. In this case with how we are returning it we will get the index
-            of 27 which happens to be 26! This is becuase the while loop ends
-            once we either return mid or when the conditons of l being less than
-            or equal to r fails. And now for the earlier mention time faster
-            than O(n) time. Since we are cutting the equation inhalf and it
-            still depends on the length of the array this will be O(logn) time.
-            Obviously in really small array of 5 numbers or ids or what have
-            you, the time difference would be so small you would not notice it,
-            however once you get to much much MUCH larger arrays, the amount of
-            time this could save stacked up over many uses will be a HUGE
-            difference in the end.
+            Getting the css is the most important part to this nice and smooth
+            carousel and missing any of the transforms or anything could cause
+            hickups and possibly no movement from the carousel. Of course more
+            style could be added and different pictures could be implemented but
+            for a base this is a great spot to start as it is not an easy CSS
+            carousel and yet a great one to improve off of!
           </p>
+          <Cardcarousel />
         </li>
       </>
     ),

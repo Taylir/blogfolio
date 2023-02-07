@@ -54,6 +54,7 @@
 .blog__img {
     margin: 16px auto;
     text-align: center;
+    width: 100%;
 }
 
 .blog__footer{
@@ -77,10 +78,6 @@
 @media (max-width:580px) {
 .blog__solutions {
     padding: 4px;
-}
-
-.blog__img  {
-    width: 90%;
 }
 
     .blog__solutions > h4 {

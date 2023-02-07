@@ -1,0 +1,193 @@
+  .card-swiper {
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+
+  .card {
+    position: absolute;
+    transition: transform 800ms cubic-bezier(0.05, 0.43, 0.25, 0.95);
+  }
+
+  .card-groups,
+  .card-group,
+  .card {
+    aspect-ratio: 5/7;
+  }
+  
+  .card-groups,
+  .card-group,
+  .big-card {
+    width: 30vmin;
+  }
+  
+  .card-group {
+    position: absolute;
+    transition: transform 400ms ease;
+  }
+  
+  .big-card {
+    border-radius: 1vmin;
+  }
+  
+  .little-card {
+    width: 12vmin;
+    border-radius: 2vmin;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .big-card:nth-child(2) {
+    background-image: url(./Assets/husky-pup1.jpg);
+    background-size: contain;
+    transform: translateX(-10%) rotate(-1deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(2) {
+    transform: translate(-75%, 16%) rotate(-24deg);
+  }
+  
+  .big-card:nth-child(4) {
+    background-image: url(./Assets/husky-pup2.jpg);
+    background-size: contain;
+    transform: rotate(2deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(4) {
+    transform: translate(-25%, 8%) rotate(-8deg);
+  }
+  
+  .big-card:nth-child(6) {
+    background-image: url(./Assets/husky-pup3.jpg);
+    background-size: contain;
+    transform: translateX(-6%) rotate(-3deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(6) {
+    transform: translate(25%, 8%) rotate(8deg);
+  }
+  
+  .big-card:nth-child(8) {
+    background-image: url(./Assets/husky-pup4.jpg);
+    background-size: contain;
+    transform: translate(10%, 3%) rotate(5deg);
+  }
+  
+  .card-group:hover > .big-card:nth-child(8) {
+    transform: translate(75%, 16%) rotate(24deg);
+  }
+  
+  .little-card:nth-child(1) {
+    background-image: url(./Assets/cat1.jpg);
+    background-size: contain;
+  }
+  
+  .card-group:hover > .little-card:nth-child(1) {
+    transform: translate(200%, -160%) rotate(-15deg);
+  }
+  
+  .little-card:nth-child(3) {
+    background-image: url(./Assets/cat2.jpg);
+    background-size: contain;
+  }
+  
+  .card-group:hover > .little-card:nth-child(3) {
+    transform: translate(160%, 170%) rotate(15deg);
+  }
+  
+  .little-card:nth-child(5) {
+    background-image: url(./Assets/cat3.jpg);
+    background-size: contain;
+  }
+  
+  .card-group:hover > .little-card:nth-child(5) {
+    transform: translate(-280%, -170%) rotate(15deg);
+  }
+  
+  .little-card:nth-child(7) {
+    background-image: url(./Assets/cat4.jpg);
+    background-size: contain;
+  }
+  
+  .card-group:hover > .little-card:nth-child(7) {
+    transform: translate(-280%, 140%) rotate(-15deg);
+  }
+  
+  .card-group[data-index="1"] > .big-card:nth-child(2) {
+    background-image: url(./Assets/husky-pup4.jpg);
+  }
+  .card-group[data-index="1"] > .big-card:nth-child(4) {
+    background-image: url(./Assets/husky-pup3.jpg);
+  }
+  .card-group[data-index="1"] > .big-card:nth-child(6) {
+    background-image: url(./Assets/husky-pup2.jpg);
+  }
+  .card-group[data-index="1"] > .big-card:nth-child(8) {
+    background-image: url(./Assets/husky-pup1.jpg);
+  }
+  
+  .card-group[data-index="2"] > .big-card:nth-child(2) {
+    background-image: url(./Assets/husky-pup3.jpg);
+  }
+  .card-group[data-index="2"] > .big-card:nth-child(4) {
+    background-image: url(./Assets/husky-pup4.jpg);
+  }
+  .card-group[data-index="2"] > .big-card:nth-child(6) {
+    background-image: url(./Assets/husky-pup1.jpg);
+  }
+  .card-group[data-index="2"] > .big-card:nth-child(8) {
+    background-image: url(./Assets/husky-pup2.jpg);
+  }
+  
+  
+  .card-swiper__buttons {
+    margin-top: 8vmin;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4vmin;
+  }
+  
+  .card-swiper__buttons > button {
+    font-size: 2.5vmin;
+    border: 0.4vmin solid rgb(200, 200, 200);
+    border-radius: 100%;
+    color: white;
+    background-color: transparent;
+    height: 7vmin;
+    width: 7vmin;
+    cursor: pointer;
+  }
+  
+  #next-card {
+    color: rgb(33, 150, 243);
+    border-color: rgb(33, 150, 243);
+  }
+  
+  .card-group[data-status="unknown"] {
+    transform: scale(0);
+  }
+  
+  .card-group[data-status="after"] {
+    transform: translateX(50%) scale(0);
+  }
+  
+  .card-group[data-status="before"] {
+    transform: translateX(-50%) scale(0);
+  }
+  
+  .card-group[data-status="active"] {
+    transition-delay: 200ms;
+  }
+  
+  .card-group[data-status="becoming-active-from-before"] {
+    transform: translateX(-50%) scale(0);
+    transition: none;
+  }
+  
+  .card-group[data-status="becoming-active-from-after"] {
+    transform: translateX(50%) scale(0);
+    transition: none;
+  }
+  
+  
