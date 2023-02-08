@@ -3,8 +3,14 @@ import "./navAssets/Nav.css";
 import Logo from "./navAssets/Logo.png";
 import { useNavigate } from "react-router-dom";
 import Navsmall from "./Navsmall";
+import pdfResume from "../../assets/Taylor Resume 1-17-2023.docx.pdf";
 
-import { MenuRounded } from "@mui/icons-material";
+import {
+  FilePresent,
+  GitHub,
+  LinkedIn,
+  MenuRounded,
+} from "@mui/icons-material";
 
 const Nav = () => {
   const navigate = useNavigate();
@@ -30,7 +36,7 @@ const Nav = () => {
   useEffect(() => {
     setSmallNavToggle(document.querySelector(".small__nav--menu"));
     console.log(smallNav, smallNavToggle);
-  }, [smallNav,smallNavToggle]);
+  }, [smallNav, smallNavToggle]);
 
   return (
     <div className="nav-wrapper">
@@ -47,6 +53,21 @@ const Nav = () => {
               alt=""
             />
           </div>
+          <a
+            href="https://www.linkedin.com/in/taylor-lirot-232123262/"
+            target={"_blank"} rel="noreferrer"
+          >
+            {" "}
+            <LinkedIn />
+          </a>
+          <a href={pdfResume} target={"_blank"} rel="noreferrer">
+            {" "}
+            <FilePresent />
+          </a>
+          <a href="https://github.com/Taylir" target={"_blank"} rel="noreferrer">
+            {" "}
+            <GitHub />
+          </a>
         </div>
 
         {/* Nav Right */}

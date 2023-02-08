@@ -25,7 +25,26 @@
   flex: 0.5;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+}
+
+.nav__left > div,
+.nav__left > a {
+  padding-right: 4vmin;
+}
+
+.nav__left > a {
+  color: silver;
+  transition: all 300ms ease;
+}
+
+.nav__left > a:hover {
+  transform: scale(1.1);
+  color: var(--primary-color);
+}
+
+.nav__left > a > .MuiSvgIcon-root {
+  font-size: 32px;
 }
 
 .nav__logo-wrapper > img {
@@ -131,7 +150,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav__right-small {
     display: flex;
     align-items: center;
