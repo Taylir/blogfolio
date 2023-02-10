@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="container">
         <h1>
           These are some of the projects I have done and like this website they
-          are all being worked on a daily slowly improving them each time.
+          are all being worked on the daily. Each time, slowly improving them as well as applying new knowledge to them.
         </h1>
         <div className="project__grid">
           <ProjectCard
