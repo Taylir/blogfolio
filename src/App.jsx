@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import BlogPractice from "./pages/blog/BlogPractice";
 import BlogPage from "./pages/blog/BlogPage";
 import Stars from "./components/stars/Stars";
+import Gridwave from "./components/gridWave/Gridwave";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/practice-blog" element={<BlogPractice />} />
           <Route path="/practice/:id" element={<BlogPage />} />
+          <Route path="/wave" element={<Gridwave />} />
         </Routes>
       </div>
     </Router>

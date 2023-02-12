@@ -247,6 +247,11 @@
     grid-row: 5;
   }
 
+  .landing__blog-h3 {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   .about-me {
     font-size: 14px;
   }
@@ -262,6 +267,10 @@
   .landing__header {
     grid-column: 2 / 9;
     grid-row: 2;
+  }
+
+  .landing__blog-h3 {
+    font-size: 13px;
   }
 
   .about-me {

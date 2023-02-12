@@ -34,8 +34,8 @@ const Landing = () => {
           I'm a 25 year-old American{" "}
           <span className="call-to">Frontend Software Engineer</span> with a
           strong passion for developing websites with great user interface and
-          user experience. I work daily with a team consisiting of
-          some of the most <span className="call-to"> talented</span> and
+          user experience. I work daily with a team consisiting of some of the
+          most <span className="call-to"> talented</span> and
           <span className="call-to"> experienced</span> software engineers every
           day.
         </h4>
@@ -58,9 +58,10 @@ const Landing = () => {
       </div>
       <div className="blog-info">
         <h3 className="landing__blog-h3">
-          Here you can see some of the Frontend Engineering Problems I am
-          testing myself on a daily basis to stay up to date and making sure I
-          keep a strong foundation! <br />{" "}
+          I'm a skilled Frontend Engineer who regularly takes on challenging
+          projects to stay at the forefront of the industry. My commitment to
+          continual growth and learning ensures I consistently deliver top-notch
+          results. <br />{" "}
           <div className="arrow-down">
             <ArrowDownwardRounded />
           </div>
@@ -77,7 +78,7 @@ const Landing = () => {
       <Link to={"/practice-blog"} className="landing__blog-projects">
         <PlaylistAddCheckRounded />
       </Link>
-    
+
       <div className="cloud"></div>
       <div className="road"></div>
     </div>
