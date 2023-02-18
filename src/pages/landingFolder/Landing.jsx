@@ -11,7 +11,6 @@ import {
 } from "@mui/icons-material";
 
 const Landing = () => {
-  //look at future useEffects use them better
   const scaleFactor = 1 / 20;
 
   function moveClouds(event) {
