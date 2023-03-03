@@ -35,7 +35,6 @@ const Nav = () => {
 
   useEffect(() => {
     setSmallNavToggle(document.querySelector(".small__nav--menu"));
-    console.log(smallNav, smallNavToggle);
   }, [smallNav, smallNavToggle]);
 
   return (
@@ -55,7 +54,8 @@ const Nav = () => {
           </div>
           <a
             href="https://www.linkedin.com/in/taylor-lirot-232123262/"
-            target={"_blank"} rel="noreferrer"
+            target={"_blank"}
+            rel="noreferrer"
           >
             {" "}
             <LinkedIn />
@@ -64,7 +64,11 @@ const Nav = () => {
             {" "}
             <FilePresent />
           </a>
-          <a href="https://github.com/Taylir" target={"_blank"} rel="noreferrer">
+          <a
+            href="https://github.com/Taylir"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             {" "}
             <GitHub />
           </a>

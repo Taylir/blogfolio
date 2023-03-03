@@ -28,12 +28,10 @@ const Aboutcontact = () => {
         "01135LlMefKItv48l"
       )
       .then((res) => {
-        console.log("it worked");
         loading.classList.remove("contact__visable");
         success.classList += " contact__visable";
       })
       .catch((err) => {
-        console.log("it did not work");
         loading.classList.remove("contact__visable");
         alert(
           `The Email service is temporarily unavailable. Please contact me directly on tdl9716@gmail.com`
@@ -78,10 +76,11 @@ const Aboutcontact = () => {
           Hi, my Name is <span className="call-to">Taylor</span>, I'm 25 year
           old <span className="call-to">Front End Developer</span> from America.
           After I began my coding journey I realized what a fun challange this
-          would be and now I absolutley love how much their is to learn. I love the
-          fact this field is evolving so quickly as it will mean I will always have more 
-          to learn! Implementing futuristc and challanging elements is always a blast to see just how
-          much further there is to push in the coding world.{" "}
+          would be and now I absolutley love how much their is to learn. I love
+          the fact this field is evolving so quickly as it will mean I will
+          always have more to learn! Implementing futuristc and challanging
+          elements is always a blast to see just how much further there is to
+          push in the coding world.{" "}
         </h3>
       </div>
       <div className="right__contact">
